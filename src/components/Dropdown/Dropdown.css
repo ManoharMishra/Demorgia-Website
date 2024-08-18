@@ -1,0 +1,42 @@
+@media(max-width: 1600px){
+    .dropdown{
+    position: absolute;
+    top: 3.8rem;
+    right: 190px;
+    width: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 12px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid rgb(202, 202, 202);
+    }
+
+    .dropdown ul{
+        flex-direction: column;
+    }
+
+    .dropdown ul li{
+        padding: 0.5rem;
+        padding-bottom: 2px;
+        text-transform: uppercase;
+        color: rgb(0, 221, 122);
+        font-size: 14px;
+    }
+
+    .dropdown ul li img{
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+@media (max-width: 1520px) {
+    .dropdown{
+        top: 0;
+        right: 0;
+        padding: 0;
+        }
+}

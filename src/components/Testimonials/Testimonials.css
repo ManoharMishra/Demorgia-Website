@@ -1,0 +1,241 @@
+.testimonials-section{
+    width: 100%;
+    padding: 20px 0 60px;
+    position: relative;
+}
+
+.testimonials-container{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(min-width: 770px){
+    .testimonials-container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials-container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials-container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .testimonials-container{
+        max-width: 1350px;
+    }
+}
+
+@media(max-width:1600px){
+    .testimonials-title h2::before{
+    content: '';
+    position: absolute;
+    top: -38.8rem;
+    left: 34.8rem;
+    width: 12% !important; 
+    height: 100%;
+    border-bottom: 0.1rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.testimonials-title h2::after{
+    content: '';
+    position: absolute;
+    top: -38.9rem;
+    left: 37.95rem;
+    width: 4% !important; 
+    height: 100%;
+    border-bottom: 0.25rem solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+ @media(max-width:1520px){
+    .testimonials-title h2::before{
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 37rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.testimonials-title h2::after{
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 39.2rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0 solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+.testimonials-items-container{
+   padding: 20px 0 20px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: #fff;
+}
+
+.testimonials-items{
+    max-width: 950px;
+    width: 100%;
+    background-color: #fff;
+    cursor: grab;
+}
+
+.testimonials-image{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: 3px solid rgb(0, 221, 122);
+    outline-offset: 2px;
+}
+
+.slider .slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 1.2;
+  max-width: 950px;
+}
+
+.slider .slide h3.person-name{
+    margin-top: 10px;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.slider .slide span.person-description{
+    font-size: 15px;
+    color: gray;
+}
+
+.slider .slide .testimonial-description p{
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgb(48, 48, 48);
+}
+
+.slider .slide .comma{
+    font-size: 45px;
+    color: rgb(0, 221, 122);
+}
+
+.slider .slide .left-comma{
+    margin-right: 5px;
+}
+
+.slider .slide .right-comma{
+    position: relative;
+    top: -0.3rem;
+    left: 5px;
+    margin-bottom: -2rem;
+}
+
+@media ( max-width : 376px){
+    .testimonials-image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .slider .slide h3.person-name{
+        font-size: 16px;
+    }
+
+    .slider .slide span.person-description{
+        font-size: 11px;
+    }
+
+    .slider .slide .testimonial-description p{
+        font-size: 11.8px;
+    }
+   
+    .slider .slide .comma{
+        font-size: 20px;
+    }
+
+    .slider .slide .right-comma{
+        top: -1.5rem;
+    }
+}
+
+.testimonials-items .swiper-pagination{
+   position: relative;
+   margin-top: 5px;
+}
+
+.testimonials-items .swiper-pagination .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    transition: backround-color 0.5s ease;
+}
+
+.testimonials-items .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: rgb(0, 221, 122);
+}
+
+
+    .next-button{
+    right: 0px;
+    top: 50%;
+    position: absolute;
+    color: rgb(128, 128, 128);
+    transform: scale(-1,-1);
+    border-radius: 50%;
+    z-index: 10;
+    }
+
+    .prev-button{
+        left: 0px;
+        top: 50%;
+        position: absolute;
+        color: rgb(128, 128, 128);
+        transform: scale(-1,-1);
+        border-radius: 50%;
+        z-index: 10;
+    }
+
+    .next-button .next-button-icon, .prev-button .prev-button-icon{
+        width: 20px;
+        height: 30px;
+    }
+
+    .next-button:hover, .prev-button:hover{
+        color: rgb(0, 221, 122);
+        cursor: pointer;
+    } 
+
+
+@media(max-width: 1520px){
+    .next-button{
+     display: none;
+    }
+
+    .prev-button{
+        display: none;
+    }
+}

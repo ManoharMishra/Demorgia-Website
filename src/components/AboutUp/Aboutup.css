@@ -1,0 +1,99 @@
+.aboutup-section{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    padding: 1px;
+}
+
+.aboutup-container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(min-width: 770px){
+    .aboutup-container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .aboutup-container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutup-container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .aboutup-container{
+        max-width: 1450px;
+    }
+}
+
+.aboutup-items{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 9rem;
+}
+
+.aboutup-item{
+    max-width: 100%;
+    padding: 10px 40px;
+    color: #fff;
+}
+
+@media(max-width: 1230px){
+    .aboutup-items{
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .aboutup-items {
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+  }
+
+.aboutup-items .aboutup-item .logo{
+    width: 55px;
+    height: 50px;
+}
+
+.continuous .logo{
+    height: 55px;
+}
+
+.aboutup-item h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.aboutup-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.aboutup-item a:hover{
+    color: rgb(9, 138, 0);
+    text-decoration: underline;
+}
+
+.aboutup-item span{
+   font-size: 14px;
+   line-height: 1.4;
+}
+
+.aboutup-items .partnership{
+   background-image: linear-gradient(rgb(2, 2, 2), rgb(41, 41, 40), rgb(0, 0, 0));
+}

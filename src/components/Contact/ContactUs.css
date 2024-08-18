@@ -1,0 +1,237 @@
+.contactus-section{
+    width: 100%;
+    padding: 20px 0 60px;
+    position: relative;
+    transition: .1s;
+}
+
+.contactus-container{
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+@media(min-width: 770px){
+    .contactus-container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .contactus-container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contactus-container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contactus-container{
+        max-width: 1350px;
+    }
+}
+
+@media(max-width:1600px){
+    .contactus-title h2::before{
+    content: '';
+    position: absolute;
+    top: -43.3rem;
+    left: 35rem;
+    width: 11% !important;
+    height: 100%;
+    border-bottom: 0.1rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.contactus-title h2::after{
+    content: '';
+    position: absolute;
+    top: -43.4rem;
+    left: 37.75rem;
+    width: 4% !important; 
+    height: 100%;
+    border-bottom: 0.25rem solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+@media(max-width:1520px){
+    .contactus-title h2::before{
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 37rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.contactus-title h2::after{
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 39.2rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0 solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+
+.contactus-items{
+    margin-top: 40px ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@media (max-width: 376px) {
+    .contactus-items{
+        flex-direction: column;
+    }
+}
+
+.contactus-item{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+@media (max-width: 376px) {
+    .contactus-item{
+        margin-top: 20px;
+    }
+}
+
+
+.contactus-item .contactus-icons{
+    width: 45px;
+    height: 45px;
+    color: rgb(0, 221, 122);;
+    margin: .5rem;
+}
+
+.contactus-item h4{
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+}
+
+.contactus-item p{
+    padding: .2rem;
+    font-size: 15px;
+    color: #171717;
+}
+
+.contactus-item p a{
+    color: #171717;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contactus-item a:hover{
+    color: rgb(0, 221, 122);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr{
+    position: relative;
+    top: 10px;
+    height: 11rem;
+    opacity: 0.4;
+}
+@media (max-width: 376px) {
+    hr{
+        height: 0;
+    }
+}
+
+.contactus-contents{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactus-content{
+    display: flex;
+    gap: 1rem;
+}
+@media (max-width: 376px) {
+    .contactus-content{
+       flex-direction: column;
+    }
+}
+
+.contactus-contents .input-box{
+    width: 100%;
+}
+
+.contactus-contents input{
+    padding: .5rem;
+    font-size: 15px;
+    border: .5px solid rgb(215, 215, 215);
+    border-radius: 3px;
+    width: 100%;
+}
+
+.contactus-contents input:focus{
+    outline: .5px solid rgb(29, 149, 176);
+}
+
+.contactus-contents textarea{
+    padding: .5rem;
+    font-size: 15px;
+    border: .5px solid rgb(215, 215, 215);
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contactus-contents textarea:focus{
+    outline: .5px solid rgb(29, 149, 176);
+}
+
+.form-error{
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgb(213, 0, 0);
+}
+
+.contactus-btn{
+    width: 180px;
+    margin-top: 30px;
+    padding: .7rem;
+    font-size: 17px;
+    color: #fff;
+    background: rgb(9, 138, 0);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contactus-btn:hover{
+    background: rgb(6, 93, 0);
+}

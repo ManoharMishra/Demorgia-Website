@@ -1,0 +1,192 @@
+.skills-section{
+    width: 100%;
+    background: #fff;
+    padding: 20px 0 60px;
+    position: relative;
+}
+
+.skills-container{
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(min-width: 770px){
+    .skills-container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills-container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills-container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .skills-container{
+        max-width: 1350px;
+    }
+}
+
+@media(max-width:1600px){
+    .skills-title h2::before{
+    content: '';
+    position: absolute;
+    top: -24.3rem;
+    left: 43.15rem;
+    width: 9% !important; 
+    height: 100%;
+    border-bottom: 0.1rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.skills-title h2::after{
+    content: '';
+    position: absolute;
+    top: -24.37rem;
+    left: 45.75rem;
+    width: 3.5% !important; 
+    height: 100%;
+    border-bottom: 0.25rem solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+@media(max-width:1520px){
+    .skills-title h2::before{
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 37rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.skills-title h2::after{
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 39.2rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0 solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+.skills-title p{
+    line-height: 1.5;
+}
+
+.skills-section .skills-items{
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.skills-item{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 100%;
+}
+
+.skills-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.skills-info p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 15px;
+    color: #fff;
+    opacity: 1;
+    -webkit-animation: showText 0.5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
+}
+@media (max-width: 376px) {
+    .skills-info p{
+       font-size: 10px;
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+}
+.progress-line{
+    height: 35px;
+    width: 100%;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-line span{
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    transition: 1.5s all;
+}
+
+.progress-line span.animate{
+    -webkit-animation: animate 1.5s  0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1.5s  0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@-webkit-keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animate{
+    100%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animate{
+    100%{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}

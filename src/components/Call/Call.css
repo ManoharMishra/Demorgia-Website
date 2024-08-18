@@ -1,0 +1,56 @@
+.call-section{
+    width: 100%;
+    min-height: 35vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    background: linear-gradient(rgba(9, 87, 101, 0.703), rgba(12, 96, 80, 0.61)), url('src/assets/img/call-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+.call{
+    text-align: center;
+}
+
+.call h2{
+    color: #fff;
+}
+
+.call h2::before{
+    content: none;
+}
+
+.call h2::after{
+    content: none;
+}
+
+.call p{
+    color: #fff;
+}
+
+.call button{
+    margin: 2rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 17px;
+    border-radius: 2rem;
+    border: 3px solid #fff;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.call button:hover{
+    background:  rgba(0, 255, 115, 0.879);
+    border: 3px solid rgba(6, 83, 0, 0.697);
+    text-decoration: underline;
+    color: #fff;
+}
+
+.call a{
+    color: #fff;
+    text-decoration: none;
+}

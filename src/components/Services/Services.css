@@ -1,0 +1,146 @@
+.services-section{
+    width: 100%;
+    background: #fff;
+    padding: 20px 0 60px;
+    position: relative;
+}
+
+.services-container{
+    width: 100%;
+    background: #ffffff;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+@media(min-width: 770px){
+    .services-container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .services-containerr{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .services-container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .services-container{
+        max-width: 1550px;
+    }
+}
+
+@media(max-width:1600px){
+    .services-title h2::before{
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 37rem;
+    width: 9% !important; 
+    height: 100%;
+    border-bottom: 0.1rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.services-title h2::after{
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 39.2rem;
+    width: 3.5% !important; 
+    height: 100%;
+    border-bottom: 0.25rem solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+@media(max-width:1520px){
+    .services-title h2::before{
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 37rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.services-title h2::after{
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 39.2rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0 solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+.services{
+    margin: auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service{
+    flex-basis: 30%;
+   display: flex;
+   margin: 3px;
+   padding: 15px;
+   cursor: pointer;
+   -webkit-box-flex: 0;
+   -ms-flex: 0 0 30%;
+   flex: 0 0 30%;
+   max-width: 100%;
+}
+
+@media(max-width: 1000px){
+  .services{
+    flex-direction: column;
+  }
+
+}
+
+.service:hover{
+   color: rgb(9, 138, 0);
+}
+
+.icon{
+    font-size: 30px;
+    margin: 0 1rem;
+    color: rgb(9, 138, 0);
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h4:hover{
+    text-decoration: underline;
+}
+
+p{
+    margin-top: 0.7rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgb(68, 68, 68);
+}

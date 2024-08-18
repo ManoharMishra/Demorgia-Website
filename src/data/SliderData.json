@@ -1,0 +1,22 @@
+{
+    "slides": [
+      {
+        "src": "src/assets/img/slider1.jpeg",
+        "alt": "Image 1 for carousel",
+        "title": "We Are professional",
+        "subtitle": "At Demorgia Consulting Services, professionalism is at the core of everything we do, ensuring excellence in our solutions and client satisfaction"
+      },
+      {
+        "src": "src/assets/img/slider2.jpeg",
+        "alt": "Image 2 for carousel",
+        "title": "Unlocking Potential, Empowering Growth",
+        "subtitle": "Welcome to Demorgia Consulting Services, where we harness the power of skills assessment to unlock hidden talents and foster personal growth"
+      },
+      {
+        "src": "src/assets/img/slider3.jpeg",
+        "alt": "Image 3 for carousel",
+        "title": "Your Trusted Partner in Skills Assessment",
+        "subtitle": "Demorgia Consulting Services, an esteemed assessment agency, dedicating to evaluating and certifying skills across diverse industries"
+      }
+    ]
+  }

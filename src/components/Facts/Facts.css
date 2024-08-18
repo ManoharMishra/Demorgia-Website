@@ -1,0 +1,132 @@
+.facts-section{
+    width: 100%;
+    background: linear-gradient(rgb(242, 242, 242),rgba(247, 247, 247, 0.684)), url('src/assets/img/facts-bg.png') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 5px 0 60px;
+}
+
+.facts-container{
+    width: 100%;
+    padding-left: 9%;
+    padding-right: 9%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(min-width: 770px){
+    .facts-container{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .facts-container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .facts-container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .facts-container{
+        max-width: 1350px;
+    }
+}
+
+@media(max-width:1600px){
+    .facts-title h2::before{
+    content: '';
+    position: absolute;
+    top: -18.1rem;
+    left: 44.1rem;
+    width: 7% !important;
+    height: 100%;
+    border-bottom: 0.1rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.facts-title h2::after{
+    content: '';
+    position: absolute;
+    top: -18.2rem;
+    left: 46.25rem;
+    width: 2.5% !important;
+    height: 100%;
+    border-bottom: 0.25rem solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+@media(max-width:1520px){
+    .facts-title h2::before{
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 37rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0rem solid rgb(206, 206, 206);
+    transition: 0.4s linear;
+}
+
+.facts-title h2::after{
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 39.2rem;
+    width: 0% !important; 
+    height: 100%;
+    border-bottom: 0 solid rgb(9, 138, 0);
+    transition: 0.4s linear;
+}
+}
+
+
+.facts-title p{
+    line-height: 1.5;
+}
+
+.facts-counters{
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.facts-counter{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.facts-counter h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(9, 138, 0);
+}
+
+.facts-counter h1 span{
+    margin-left: 2px;
+}
+
+.facts-counter p{
+    /* margin-top: 20px; */
+    font-size: 15px;
+}
